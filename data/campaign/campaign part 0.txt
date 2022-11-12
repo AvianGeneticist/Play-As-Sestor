@@ -1,0 +1,54 @@
+mission "mereti removal 1"
+	name "Clear the mereti from Asikafarnut."
+	description "Join the effort to remove Mereti patrols from <system>."
+	landing
+	source "Sestor Ikfar"
+	to offer
+		"combat rating" > 2000
+		has "sestor creation"
+	on offer
+		conversation
+			`As you settle in the dock at Sestor Ikfar, you receive a message. "Imperator," It begins, "You have performed your duties as a force within the fleet admirably so far. However, we have recently detected a very large fleet of Mereti activity; centered on <system>, where you currently are located. Join our force and repel the Mereti invasion; if all goes well, we will be able to remove them from the deepest reaches of our space.`
+			`Though you are a subhive, you still must obey the collective's direct orders. You prepare yourself for the coming battle.`
+				accept
+	npc
+		personality heroic staying
+		government "Kor Sestor"
+		system "Asikafarnut"
+		fleet
+			names "kor sestor"
+			variant
+				"Kar Ik Vot 349" 2
+				"Met Par Tek 53" 3
+				"Met Par Tek 53 (Sniper)" 2
+				"Tek Far 71 - Lek" 2
+				"Tek Far 78 - Osk" 1
+				"Tek Far 109"
+				"Far Lek 14" 29
+				"Far Osk 27" 16
+	npc kill
+		government "Kor Mereti"
+		personality heroic staying nemesis target
+		system "Asikafarnut"
+		fleet
+			names "kor mereti"
+			variant
+				"Model 32" 3
+				"Model 64" 2
+				"Model 128" 3
+				"Model 256" 2
+				"Model 512"
+		dialog "You have cleared the large Mereti fleet from Asikafarnut. Land on Sestor Ikfar to communicate your success."
+	on visit
+		dialog "There are still Mereti ships above! Take off and finish the job."
+	on complete
+		payment 10000000
+		"salary: Resource Allowance" += 10000
+		event "mereti cleared from asikafarnut"
+		conversation
+			`You receive a message and a large resource allocation as you pull into the hangar. "Thank you for your service, Imperator," It reads, "Your service to the collective will not be forgotten. Starting today you will receive 10000 credits per day to maintain your fleet's fighters or other needs."`
+		
+event "mereti cleared from asikafarnut"
+	system Asikafarnut
+		remove fleet "Large Kor Mereti"
+		add fleet "Small Kor Mereti" 5000
