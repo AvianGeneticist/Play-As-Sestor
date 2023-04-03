@@ -1,0 +1,225 @@
+# Weapon Research -- Generally nominal improvements to overall weapon lethality, often including a reduction in size.
+
+mission "Weapons Research - Gravitational"
+	description "Start a 35 million credit research initiative to improve the Grab-Strike, Banisher, and Warder turrets. Expected timespan is 100 days."
+	job
+	source "Firka Tesk"
+	destination "Firka Tesk"
+	to offer
+		"credits" >= 35000001
+		has "event: firka tesk advanced outfitter"
+	on accept
+		payment -35000000
+		event "gravitational research concluded" 100
+			
+event "gravitational research concluded"
+	outfitter "Sestor Advanced"
+		add "Enhanced Grab-Strike Turret"
+		add "Enhanced Banisher Grav-Turret"
+		add "Enhanced Warder Anti-Missile"
+		
+mission "Weapons Research - Energetic"
+	description "Start a 25 million credit research initiative to improve Thermal Repeaters and Detainers. Expected timespan is 98 days."
+	job
+	source "Firka Tesk"
+	destination "Firka Tesk"
+	to offer
+		"credits" >= 25000001
+		has "event: firka tesk advanced outfitter"
+	on accept
+		payment -25000000
+		event "energetic research concluded" 95
+			
+event "energetic research concluded"
+	outfitter "Sestor Basics"
+		add "Enhanced Thermal Repeater"
+		add "Enhanced Thermal Repeater Turret"
+	outfitter "Sestor Advanced"
+		add "Enhanced Detainer"
+		
+mission "Weapons Research - Ballistic"
+	description "Start a 15 million credit research initiative to improve Thermal Repeaters and Detainers. Expected timespan is 70 days."
+	job
+	source "Firka Tesk"
+	destination "Firka Tesk"
+	to offer
+		"credits" >= 15000001
+		has "event: firka tesk advanced outfitter"
+	on accept
+		payment -15000000
+		event "ballistic research concluded" 70
+		
+event "ballistic research concluded"
+	outfitter "Sestor Basics"
+		add "Piercer Missile Augmentator"
+		
+# Energy Research -- Usually just tuning to improve output of existing generators. Improves reactor efficiency by 10-15% (increases with size), which doesn't sound like a lot, but as Korath outfits use lots of big numbers it can make a difference.
+
+mission "Energy Research - Radiothermal Generators"
+	description "Start a 20 million credit research initiative to improve Radiothermal Generators. Expected timespan is 90 days."
+	job
+	source "Firka Tesk"
+	destination "Firka Tesk"
+	to offer
+		"credits" >= 20000001
+		has "event: firka tesk advanced outfitter"
+	on accept
+		payment -20000000
+		event "rtgenerator research concluded" 90
+		
+event "rtgenerator research concluded"
+	outfitter "Sestor Basics"
+		add "Tuned Generator (Candle Class)"
+		add "Tuned Generator (Furnace Class)"
+	outfitter "Sestor Advanced"
+		add "Tuned Generator (Inferno Class)"
+		
+mission "Energy Research - Plasma Cores"
+	description "Start a 50 million credit research initiative to improve Plasma Cores. Expected timespan is 150 days."
+	job
+	source "Firka Tesk"
+	destination "Firka Tesk"
+	to offer
+		"credits" >= 50000001
+		has "event: firka tesk advanced outfitter"
+	on accept
+		payment -50000000
+		event "plasma core research concluded" 150
+		
+event "plasma core research concluded"
+	outfitter "Sestor Basics"
+		add "Augmented Plasma Core"
+	outfitter "Sestor Advanced"
+		add "Double Augmented Plasma Core"
+		add "Triple Augmented Plasma Core"
+		
+mission "Support Research - Heat Shunts"
+	description "Start a 15 million credit research initiative to improve Plasma Cores. Expected timespan is 80 days."
+	job
+	source "Firka Tesk"
+	destination "Firka Tesk"
+	to offer
+		"credits" >= 15000001
+		has "event: firka tesk advanced outfitter"
+	on accept
+		payment -15000000
+		event "heat shunt research concluded" 80
+		
+event "heat shunt research concluded"
+	outfitter "Sestor Basics"
+		add "Reengineered Small Heat Shunt"
+	outfitter "Sestor Advanced"
+		add "Reengineered Large Heat Shunt"
+		add "Reengineered Huge Heat Shunt"
+		
+mission "Support Research - Systems Cores"
+	description "Start a 40 million credit research initiative to improve Systems Cores. Expected timespan is 120 days."
+	job
+	source "Firka Tesk"
+	destination "Firka Tesk"
+	to offer
+		"credits" >= 40000001
+		has "event: firka tesk advanced outfitter"
+	on accept
+		payment -40000000
+		event "system core research concluded" 120
+		
+event "system core research concluded"
+	outfitter "Sestor Basics"
+		add "Advanced Systems Node"
+		add "Advanced Systems Core (Small)"
+	outfitter "Sestor Advanced"
+		add "Advanced Systems Core (Medium)"
+		add "Advanced Systems Core (Large)"
+		
+# Ship Research -- Small Hulls, working up
+
+mission "Ship Research - Fighter Hulls"
+	description "Start a 40 million credit research initiative to improve Sestor Fighters and Drones. Expected timespan is 90 days."
+	job
+	source "Firka Tesk"
+	destination "Firka Tesk"
+	to offer
+		"credits" >= 40000001
+		has "event: firka tesk advanced shipyard"
+		has "event: gravitational research concluded"
+		has "event: ballistic research concluded"
+		has "event: energetic research concluded"
+		has "event: rtgenerator research concluded"
+		has "event: plasma core research concluded"
+		has "event: heat shunt research concluded"
+		has "event: system core research concluded"
+	on accept
+		payment -40000000
+		event "sestor fighter research concluded" 90
+		
+event "sestor fighter research concluded"
+	shipyard "Sestor Basics"
+		add "Uplifted Far Lek 14"
+		add "Uplifted Far Osk 27"
+		
+mission "Ship Research - Small Warship Hulls"
+	description "Start a 50 million credit research initiative to improve Sestor Light Warships. Expected timespan is 110 days."
+	job
+	source "Firka Tesk"
+	destination "Firka Tesk"
+	to offer
+		"credits" >= 50000001
+		has "event: sestor fighter research concluded"
+	on accept
+		payment -50000000
+		event "sestor light warship research concluded" 110
+		
+event "sestor light warship research concluded"
+	shipyard "Sestor Basics"
+		add "Uplifted Met Par Tek 53"
+		
+mission "Ship Research - Small Carrier Hulls"
+	description "Start a 65 million credit research initiative to improve Sestor Light Carriers. Expected timespan is 160 days."
+	job
+	source "Firka Tesk"
+	destination "Firka Tesk"
+	to offer
+		"credits" >= 65000001
+		has "event: sestor light warship research concluded"
+	on accept
+		payment -65000000
+		event "sestor light carrier research concluded" 160
+		
+event "sestor light carrier research concluded"
+	shipyard "Sestor Advanced"
+		add "Uplifted Tek Far 71 - Lek"
+		add "Uplifted Tek Far 78 - Osk"
+		
+mission "Ship Research - Heavy Carrier Hulls"
+	description "Start a 50 million credit research initiative to improve Sestor Heavy Carriers. Expected timespan is 120 days."
+	job
+	source "Firka Tesk"
+	destination "Firka Tesk"
+	to offer
+		"credits" >= 50000001
+		has "event: sestor light carrier research concluded"
+	on accept
+		payment -50000000
+		event "sestor heavy carrier research concluded" 120
+		
+event "sestor heavy carrier research concluded"
+	shipyard "Sestor Advanced"
+		add "Uplifted Tek Far 109"
+		
+mission "Ship Research - Heavy Battleship Hulls"
+	description "Start a 70 million credit research initiative to improve Sestor Heavy Battleships. Expected timespan is 130 days."
+	job
+	source "Firka Tesk"
+	destination "Firka Tesk"
+	to offer
+		"credits" >= 70000001
+		has "event: sestor heavy carrier research concluded"
+	on accept
+		payment -70000000
+		event "sestor heavy battleship research concluded" 130
+		
+event "sestor heavy battleship research concluded"
+	shipyard "Sestor Advanced"
+		add "Uplifted Kar Ik Vot 349"
+		
