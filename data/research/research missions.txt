@@ -157,7 +157,57 @@ event "sestor fighter research concluded"
 	shipyard "Sestor Basics"
 		add "Uplifted Far Lek 14"
 		add "Uplifted Far Osk 27"
-		
+	fleet "Small Kor Sestor"
+		add variant 10
+			"Tek Far 71 - Lek"
+			"Uplifted Far Lek 14" 10
+		add variant 7
+			"Tek Far 71 - Lek"
+			"Uplifted Far Lek 14" 7
+		add variant 4
+			"Tek Far 71 - Lek"
+			"Uplifted Far Lek 14" 3
+		add variant 8
+			"Tek Far 78 - Osk"
+			"Uplifted Far Osk 27" 9
+		add variant 6
+			"Tek Far 78 - Osk"
+			"Uplifted Far Osk 27" 6
+		add variant 3
+			"Tek Far 78 - Osk"
+			"Uplifted Far Osk 27" 3
+		add variant 6
+			"Tek Far 109"
+			"Uplifted Far Osk 27" 7
+			"Uplifted Far Lek 14" 9
+		add variant 3
+			"Tek Far 109"
+			"Uplifted Far Osk 27" 4
+			"Uplifted Far Lek 14" 6
+	fleet "Large Kor Sestor"
+		add variant 12
+			"Kar Ik Vot 349"
+			"Tek Far 71 - Lek"
+			"Uplifted Far Lek 14" 10
+			"Met Par Tek 53" 2
+		add variant 10
+			"Kar Ik Vot 349"
+			"Tek Far 78 - Osk"
+			"Uplifted Far Osk 27" 9
+			"Met Par Tek 53" 2
+		add variant 8
+			"Kar Ik Vot 349"
+			"Tek Far 78 - Osk"
+			"Uplifted Far Osk 27" 9
+			"Tek Far 71 - Lek"
+			"Uplifted Far Lek 14" 10
+		add variant 4
+			"Tek Far 109"
+			"Tek Far 71 - Lek"
+			"Tek Far 78 - Osk"
+			"Uplifted Far Osk 27" 19
+			"Uplifted Far Lek 14" 16
+			
 mission "Ship Research - Small Warship Hulls"
 	description "Start a 50 million credit research initiative to improve Sestor Light Warships. Expected timespan is 110 days."
 	job
@@ -173,6 +223,22 @@ mission "Ship Research - Small Warship Hulls"
 event "sestor light warship research concluded"
 	shipyard "Sestor Basics"
 		add "Uplifted Met Par Tek 53"
+	fleet "Small Kor Sestor"
+		add variant 10
+			"Uplifted Met Par Tek 53" 3
+	fleet "Large Kor Sestor"
+		add variant 6
+			"Uplifted Met Par Tek 53" 7
+		add variant 6
+			"Kar Ik Vot 349" 1
+			"Tek Far 71 - Lek"
+			"Uplifted Far Lek 14" 10
+			"Uplifted Met Par Tek 53" 2
+		add variant 6
+			"Kar Ik Vot 349" 1
+			"Tek Far 78 - Osk"
+			"Uplifted Far Osk 27" 9
+			"Uplifted Met Par Tek 53" 2
 		
 mission "Ship Research - Small Carrier Hulls"
 	description "Start a 65 million credit research initiative to improve Sestor Light Carriers. Expected timespan is 160 days."
@@ -190,6 +256,48 @@ event "sestor light carrier research concluded"
 	shipyard "Sestor Advanced"
 		add "Uplifted Tek Far 71 - Lek"
 		add "Uplifted Tek Far 78 - Osk"
+	fleet "Small Kor Sestor"
+		add variant 10
+			"Uplifted Tek Far 71 - Lek"
+			"Uplifted Far Lek 14" 16
+		add variant 7
+			"Uplifted Tek Far 71 - Lek"
+			"Uplifted Far Lek 14" 11
+		add variant 4
+			"Uplifted Tek Far 71 - Lek"
+			"Uplifted Far Lek 14" 7
+		add variant 8
+			"Uplifted Tek Far 78 - Osk"
+			"Uplifted Far Osk 27" 14
+		add variant 6
+			"Uplifted Tek Far 78 - Osk"
+			"Uplifted Far Osk 27" 10
+		add variant 3
+			"Uplifted Tek Far 78 - Osk"
+			"Uplifted Far Osk 27" 6
+	fleet "Large Kor Sestor"
+		add variant 12
+			"Kar Ik Vot 349"
+			"Uplifted Tek Far 71 - Lek"
+			"Uplifted Far Lek 14" 16
+			"Uplifted Met Par Tek 53" 2
+		add variant 10
+			"Kar Ik Vot 349"
+			"Uplifted Tek Far 78 - Osk"
+			"Uplifted Far Osk 27" 14
+			"Uplifted Met Par Tek 53" 2
+		add variant 8
+			"Kar Ik Vot 349"
+			"Uplifted Tek Far 78 - Osk"
+			"Uplifted Far Osk 27" 14
+			"Uplifted Tek Far 71 - Lek"
+			"Uplifted Far Lek 14" 16
+		add variant 4
+			"Tek Far 109"
+			"Uplifted Tek Far 71 - Lek"
+			"Uplifted Tek Far 78 - Osk"
+			"Uplifted Far Osk 27" 25
+			"Uplifted Far Lek 14" 21
 		
 mission "Ship Research - Heavy Carrier Hulls"
 	description "Start a 50 million credit research initiative to improve Sestor Heavy Carriers. Expected timespan is 120 days."
@@ -206,6 +314,26 @@ mission "Ship Research - Heavy Carrier Hulls"
 event "sestor heavy carrier research concluded"
 	shipyard "Sestor Advanced"
 		add "Uplifted Tek Far 109"
+	fleet "Small Kor Sestor"
+		add variant 8
+			"Uplifted Tek Far 109"
+			"Uplifted Far Osk 27" 12
+			"Uplifted Far Lek 14" 14
+		add variant 2
+			"Tek Far 109"
+			"Uplifted Far Osk 27" 8
+			"Uplifted Far Lek 14" 9
+	fleet "Large Kor Sestor"
+		add variant 8
+			"Uplifted Tek Far 109" 2
+			"Uplifted Far Osk 27" 24
+			"Uplifted Far Lek 14" 28
+		add variant 6
+			"Uplifted Tek Far 109"
+			"Uplifted Tek Far 71 - Lek"
+			"Uplifted Tek Far 78 - Osk"
+			"Uplifted Far Osk 27" 26
+			"Uplifted Far Lek 14" 30
 		
 mission "Ship Research - Heavy Battleship Hulls"
 	description "Start a 70 million credit research initiative to improve Sestor Heavy Battleships. Expected timespan is 130 days."
@@ -222,4 +350,20 @@ mission "Ship Research - Heavy Battleship Hulls"
 event "sestor heavy battleship research concluded"
 	shipyard "Sestor Advanced"
 		add "Uplifted Kar Ik Vot 349"
-		
+	fleet "Large Kor Sestor"
+		add variant 10
+			"Uplifted Kar Ik Vot 349"
+			"Uplifted Tek Far 71 - Lek"
+			"Uplifted Far Lek 14" 16
+			"Uplifted Met Par Tek 53" 2
+		add variant 8
+			"Uplifted Kar Ik Vot 349"
+			"Uplifted Tek Far 78 - Osk"
+			"Uplifted Far Osk 27" 14
+			"Uplifted Met Par Tek 53" 2
+		add variant 7
+			"Uplifted Kar Ik Vot 349"
+			"Uplifted Tek Far 78 - Osk"
+			"Uplifted Far Osk 27" 14
+			"Uplifted Tek Far 71 - Lek"
+			"Uplifted Far Lek 14" 16
