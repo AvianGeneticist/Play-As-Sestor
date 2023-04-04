@@ -20,7 +20,7 @@ outfit "Reengineered Large Heat Shunt"
 
 outfit "Reengineered Huge Heat Shunt"
 	category "Systems"
-	cost 1002000
+	cost 3882000
 	thumbnail "outfit/large heat shunt"
 	"mass" 75
 	"outfit space" -75

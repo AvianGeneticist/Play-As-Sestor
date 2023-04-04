@@ -204,7 +204,7 @@ mission "Firka Tesk Investment Medium Repeat"
 		"credits" >= 10000001
 		has "event: firka tesk advanced shipyard"
 	on accept
-		payment -30000000
+		payment -10000000
 		event "firka tesk medium repeat" 9
 			
 event "firka tesk medium repeat"

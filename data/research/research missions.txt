@@ -33,7 +33,7 @@ mission "Weapons Research - Energetic"
 event "energetic research concluded"
 	outfitter "Sestor Basics"
 		add "Enhanced Thermal Repeater"
-		add "Enhanced Thermal Repeater Turret"
+		add "Enhanced Repeater Turret"
 	outfitter "Sestor Advanced"
 		add "Enhanced Detainer"
 		
