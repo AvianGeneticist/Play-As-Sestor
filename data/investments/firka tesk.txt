@@ -9,7 +9,7 @@ mission "Firka Tesk Investment 1"
 	on offer
 		conversation
 			`The planet known as "Firka Tesk" very out of the way and heavily damaged. However, with some time and resources, it could be used to form a capable industrial complex thanks to its vast and easily accessible reserves of geothermal energy.`
-			`	Do you want to construct infrastructure on Firka Tesk? This development will have no immediate benefit, but will pave the way for future expansions and permit the planet to be used as a spaceport.`
+			`	Do you want to construct infrastructure on Firka Tesk? This development won't provide any economic return for the 10 million credits necessary, but will pave the way for future expansions and permit the planet to be used as a spaceport.`
 			choice
 				`	[INITCOMMAND:MARKSTRUCTFORSPACEPORT]`
 					accept
@@ -38,7 +38,7 @@ mission "Firka Tesk Investment 2"
 		has "event: firka tesk spaceport"
 	on offer
 		conversation
-			`With infrastructure laid and a not-unsteady supply of ships to bring goods to and from the planet, you can begin industrial development. Mineral processors must come before any more advanced form of industry such as outfit or ship production.`
+			`With infrastructure laid and a not-unsteady supply of ships to bring goods to and from the planet, you can begin industrial development. Mineral processors must come before any more advanced form of industry such as outfit or ship production, but should provide a basic level of income. The expected cost is 15 million credits.`
 			choice
 				`	[INITCOMMAND:INSTALLFACTORY(RESOURCEPRODUCTION)]`
 					accept
@@ -100,6 +100,7 @@ mission "Firka Tesk Investment 4"
 	on offer
 		conversation
 			`With basic outfit production properly established you can develop into a more prominent superpower, allowing you to produce the best of what Sestor technology has to offer. Perhaps you could even further improve Sestor Technology to aid the war effort.`
+			`	The outfitter upgrades will cost 25 million credits.`
 			choice
 				`	[INITCOMMAND:OUTFITPRODUCTION(PHASE=2)]`
 					accept
@@ -128,7 +129,7 @@ mission "Firka Tesk Investment 5"
 		has "event: firka tesk advanced outfitter"
 	on offer
 		conversation
-			`With all contingencies of outfit production accounted for, you can begin developing ship production facilities. Be warned that it will take a much longer time than basic factory assembly.`
+			`With all contingencies of outfit production accounted for, you can begin developing ship production facilities. Be warned that it will take a much greater monetary and time investment than basic factory assembly. Expect it to cost at least 50 million credits.`
 			choice
 				`	[INITCOMMAND:SHIPYARDDEVELOPMENT(PHASE=1)]`
 					accept

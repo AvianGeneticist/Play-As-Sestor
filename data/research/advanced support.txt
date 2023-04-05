@@ -32,7 +32,7 @@ outfit "Reengineered Huge Heat Shunt"
 outfit "Advanced Systems Node"
 	plural "Advanced Systems Nodes"
 	category "Systems"
-	cost 621000
+	cost 821000
 	thumbnail "outfit/tiny systems core"
 	"mass" 13
 	"outfit space" -13
@@ -47,7 +47,7 @@ outfit "Advanced Systems Node"
 outfit "Advanced Systems Core (Small)"
 	plural "Advanced Systems Cores (Small)"
 	category "Systems"
-	cost 1452000
+	cost 2061000
 	thumbnail "outfit/small systems core"
 	"mass" 24
 	"outfit space" -24
@@ -62,7 +62,7 @@ outfit "Advanced Systems Core (Small)"
 outfit "Advanced Systems Core (Medium)"
 	plural "Advanced Systems Cores (Medium)"
 	category "Systems"
-	cost 3630000
+	cost 4820000
 	thumbnail "outfit/medium systems core"
 	"mass" 45
 	"outfit space" -45
@@ -77,7 +77,7 @@ outfit "Advanced Systems Core (Medium)"
 outfit "Advanced Systems Core (Large)"
 	plural "Advanced Systems Cores (Large)"
 	category "Systems"
-	cost 9075000
+	cost 11801000
 	thumbnail "outfit/large systems core"
 	"mass" 86
 	"outfit space" -86
