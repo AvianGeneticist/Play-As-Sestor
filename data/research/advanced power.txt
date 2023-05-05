@@ -6,7 +6,7 @@ outfit "Tuned Generator (Candle Class)"
 	"mass" 22
 	"outfit space" -22
 	"energy generation" 3.4
-	"heat generation" 6.6
+	"heat generation" 6.3
 	description "Iterative improvements on the Candle Class generator have improved both space and heat efficiency, though the new design is a bit more expensive."
 
 outfit "Tuned Generator (Furnace Class)"
@@ -17,7 +17,7 @@ outfit "Tuned Generator (Furnace Class)"
 	"mass" 37
 	"outfit space" -37
 	"energy generation" 6.1
-	"heat generation" 12.0
+	"heat generation" 11.4
 	description "With various improvements, this generator has been tweaked to become more efficient in every way."
 
 outfit "Tuned Generator (Inferno Class)"
@@ -28,7 +28,7 @@ outfit "Tuned Generator (Inferno Class)"
 	"mass" 68
 	"outfit space" -68
 	"energy generation" 12.0
-	"heat generation" 25.2
+	"heat generation" 23.9
 	description "Some species would look on this level of radiothermal efficiency with awe; and though it is deserving of praise, it is hardly the most impressive improvement to Sestor power generation ever made."
 
 outfit "Augmented Plasma Core"

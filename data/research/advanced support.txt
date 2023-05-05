@@ -36,7 +36,8 @@ outfit "Advanced Systems Node"
 	thumbnail "outfit/tiny systems core"
 	"mass" 13
 	"outfit space" -13
-	"energy capacity" 1800
+	"energy capacity" 2200
+	"disruption resistance" 0.12
 	"shield generation" 1.0
 	"shield energy" 1.25
 	"hull repair rate" 0.3
@@ -51,7 +52,8 @@ outfit "Advanced Systems Core (Small)"
 	thumbnail "outfit/small systems core"
 	"mass" 24
 	"outfit space" -24
-	"energy capacity" 3600
+	"energy capacity" 4400
+	"disruption resistance" 0.24
 	"shield generation" 2.0
 	"shield energy" 2.5
 	"hull repair rate" 0.6
@@ -66,7 +68,8 @@ outfit "Advanced Systems Core (Medium)"
 	thumbnail "outfit/medium systems core"
 	"mass" 45
 	"outfit space" -45
-	"energy capacity" 7200
+	"energy capacity" 8800
+	"disruption resistance" 0.48
 	"shield generation" 4.0
 	"shield energy" 5.0
 	"hull repair rate" 1.2
@@ -81,7 +84,8 @@ outfit "Advanced Systems Core (Large)"
 	thumbnail "outfit/large systems core"
 	"mass" 86
 	"outfit space" -86
-	"energy capacity" 14400
+	"energy capacity" 17600
+	"disruption resistance" 0.96
 	"shield generation" 8.0
 	"shield energy" 10.0
 	"hull repair rate" 2.4

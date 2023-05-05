@@ -100,12 +100,12 @@ outfit "Enhanced Thermal Repeater"
 		"inaccuracy" 3.5
 		"velocity" 14
 		"lifetime" 40
-		"reload" 6
+		"reload" 5
 		"burst reload" 3
 		"burst count" 5
 		"cluster"
 		"firing energy" 16
-		"firing heat" 66
+		"firing heat" 61
 		"shield damage" 20
 		"hull damage" 16
 		"heat damage" 26
@@ -137,11 +137,43 @@ outfit "Enhanced Repeater Turret"
 		"burst count" 10
 		"cluster"
 		"firing energy" 16
-		"firing heat" 66
+		"firing heat" 61
 		"shield damage" 20
 		"hull damage" 16
 		"heat damage" 26
 	description "Two enhanced thermal repeaters mounted aboard a lighter, more optimized mount. Due to heat management concerns, the turreted repeaters do not retain the tighter burst grouping of their fixed counterparts, instead opting for slower bursts with reduced pauses between."
+
+outfit "Quad Enhanced Repeater Turret"
+	category "Turrets"
+	cost 2212000
+	thumbnail "outfit/repeater turret"
+	"mass" 49
+	"outfit space" -49
+	"weapon capacity" -49
+	"energy capacity" 500
+	"required crew" 1
+	"turret mounts" -1
+	weapon
+		sprite "projectile/repeater"
+			"frame rate" 5
+		"hardpoint sprite" "hardpoint/repeater turret"
+		"hardpoint offset" 7.
+		sound "repeater"
+		"hit effect" "repeater impact"
+		"inaccuracy" 2.8
+		"turret turn" 2.4
+		"velocity" 14
+		"lifetime" 40
+		"reload" 1.25
+		"burst reload" 1
+		"burst count" 20
+		"cluster"
+		"firing energy" 16
+		"firing heat" 61
+		"shield damage" 20
+		"hull damage" 16
+		"heat damage" 26
+	description "While the upgrades to the repeater did not reduce its size, many plans for future ship upgrades included a vast increase in armament capacity. This turret allows even the largest Sestor ships the opportunity to take advantage of their potentially limited hardpoint counts."
 
 outfit "Enhanced Detainer"
 	category "Guns"
@@ -162,8 +194,8 @@ outfit "Enhanced Detainer"
 		"inaccuracy" .5
 		"velocity" 20
 		"lifetime" 106
-		"reload" 60
-		"burst reload" 10
+		"reload" 54
+		"burst reload" 9
 		"burst count" 2
 		"firing energy" 831
 		"firing force" 40
@@ -175,6 +207,41 @@ outfit "Enhanced Detainer"
 		"blast radius" 30
 		"safe"
 	description "Though the enhanced detainer sports minimal damage or fire rate improvement, it boasts a massive size reduction while retaining impressive power with improved velocity and range. A more refined tuning process also negates the chance the projectiles will cripple an ally's engines in its improved area of effect."
+
+outfit "Enhanced Detainer Turret"
+	category "Turrets"
+	cost 2486000
+	thumbnail "outfit/detainer"
+	"mass" 81
+	"outfit space" -81
+	"weapon capacity" -81
+	"energy capacity" 2200
+	"required crew" 1
+	"gun ports" -1
+	weapon
+		sprite "projectile/detainer"
+			"frame rate" 2.5
+		sound "detainer"
+		"hit effect" "detainer impact" 3
+		"hit effect" "detainer smoke" 6
+		"live effect" "detainer sparks" 50
+		"turret turn" 1.4
+		"inaccuracy" .5
+		"velocity" 20
+		"lifetime" 106
+		"reload" 54
+		"burst reload" 9
+		"burst count" 2
+		"firing energy" 831
+		"firing force" 40
+		"firing heat" 440
+		"hit force" 80
+		"shield damage" 360
+		"hull damage" 270
+		"slowing damage" 42.5
+		"blast radius" 30
+		"safe"
+	description "While the Detainer is a remarkable weapon, it was a shame that a turret-reliant ship like the Set Ru Ket 112 would have a difficult time using it. Taking full advantage of the size reduction of the Enhanced Detainer, this turret allows any ship to apply long-ranged support where it's needed most."
 
 outfit "Piercer Missile Augmentator"
 	category "Secondary Weapons"
