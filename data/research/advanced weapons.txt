@@ -217,7 +217,7 @@ outfit "Enhanced Detainer Turret"
 	"weapon capacity" -81
 	"energy capacity" 2200
 	"required crew" 1
-	"gun ports" -1
+	"turret mounts" -1
 	weapon
 		sprite "projectile/detainer"
 			"frame rate" 2.5
